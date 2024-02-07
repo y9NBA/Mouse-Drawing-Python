@@ -32,6 +32,8 @@ def loop() -> None:
             if event.type == pg.KEYDOWN:
                 if event.key == pg.K_r:
                     loop()
+                if event.key == pg.K_q:
+                    close_window = True
 
             # Рисование одной линией
             if pg.mouse.get_pressed()[0]:
